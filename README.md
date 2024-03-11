@@ -1,6 +1,6 @@
 ## LHMap-loc: Cross-Modal Monocular Localization Using LiDAR Point Cloud Heat Map (ICRA 2024) 
 #### Xinrui Wu, Jianbo Xu, Puyuan Hu, Guangming Wang, Hesheng Wang
-![pipeline](./pipeline_final.png)
+![pipeline](./fig/pipeline_final.png)
 Our paper is available at:
 * [Arxiv](https://arxiv.org/abs/2403.05002)
 ### Requirements
