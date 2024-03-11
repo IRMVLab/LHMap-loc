@@ -369,6 +369,11 @@ def main(_config, _run, seed):
                 depth_img += 1000.
                 depth_img = visibility.depth_image(uv.contiguous(), depth, depth_img, uv.shape[0], real_shape[1], real_shape[0])                         # num           , width        , height
                 depth_img[depth_img == 1000.] = 0.
+                depth_img_no_occlusion = torch.zeros_like(depth_img, device='cuda')
+                depth_img_no_occlusion = visibility.visibility2(depth_img, cam_params, depth_img_no_occlusion,
+                                                                depth_img.shape[1], depth_img.shape[0],
+                                                                occlusion_threshold, _config['occlusion_kernel'])
+
 
 
 
