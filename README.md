@@ -3,12 +3,13 @@
 ![pipeline](./fig/pipeline_final.png)
 Our paper is available at:
 * [Arxiv](https://arxiv.org/abs/2403.05002)
+* [IEEE](https://ieeexplore.ieee.org/document/10610718)
 ### Requirements
-The dependencies installation and data prepration please refer to [CMRNet](https://github.com/cattaneod/CMRNet)
+The dependencies installation and data prepration please refer to [CMRNet](https://github.com/cattaneod/CMRNet).
 
 ### LHMap construction
   ```
-python main_single_mapping.py with batch_size=8 data_folder=./KITTI_ODOMETRY/sequences/ epochs=120 max_r=10 max_t=2 BASE_LEARNING_RATE=0.0001 savemodel=./checkpoints/ test_sequence=00 
+python main_single_map.py with batch_size=8 data_folder=./KITTI_ODOMETRY/sequences/ epochs=120 max_r=10 max_t=2 BASE_LEARNING_RATE=0.0001 savemodel=./checkpoints/ test_sequence=00 
   ```
 
 ### LHMap saving
@@ -52,12 +53,13 @@ The iteration results in KITTI:
 
 If you use LHMap-loc, please cite:
 ```
-@misc{wu2024lhmaploc,
-      title={LHMap-loc: Cross-Modal Monocular Localization Using LiDAR Point Cloud Heat Map}, 
-      author={Xinrui Wu and Jianbo Xu and Puyuan Hu and Guangming Wang and Hesheng Wang},
-      year={2024},
-      eprint={2403.05002},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
+@INPROCEEDINGS{10610718,
+  author={Wu, Xinrui and Xu, Jianbo and Hu, Puyuan and Wang, Guangming and Wang, Hesheng},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={LHMap-loc: Cross-Modal Monocular Localization Using LiDAR Point Cloud Heat Map}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={8500-8506},
+  doi={10.1109/ICRA57147.2024.10610718}}
 ```
