@@ -38,7 +38,7 @@ python evaluate.py with test_sequence=00 maps_folder=local_maps data_folder=./KI
   ```
 
 ### Results
-You can require the weights for map generation [here](https://pan.quark.cn/s/d9dae03cfef3), and the weights for localization [here1](https://pan.quark.cn/s/1f87b7e00fc3), [here2](https://pan.quark.cn/s/179e68c04420), and [here3](https://pan.quark.cn/s/521d2014b8d3).
+You can acquire the weights for map generation [here](https://pan.quark.cn/s/d9dae03cfef3), and the weights for localization [here1](https://pan.quark.cn/s/1f87b7e00fc3), [here2](https://pan.quark.cn/s/179e68c04420), and [here3](https://pan.quark.cn/s/521d2014b8d3).
 
 The iteration results in KITTI:
 || <p>Median <br> Transl. error</p> | <p>Median <br> Rotation. error</p> |
